@@ -1,0 +1,4 @@
+rails new blog_api --api -T
+rails generate model Post title:string content:text
+rails db:migrate
+rails generate controller Api::V1::Posts index show create update destroy
